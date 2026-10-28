@@ -40,4 +40,4 @@
 
 ## 代码与来源
 
-本仓库是研究入口和证据摘要。完整本地项目分别在 `Projects/pushcube-ppo-open/`、`Projects/franka-ur5-pushcube-act/` 和 `ContactExplorer-reproduction/`。ContactExplorer 的算法与主体代码属于原作者；ManiSkill PPO 基线也属于官方项目。本仓库仅陈述我的复现、评估、诊断和实验记录。
+本仓库是研究入口和证据摘要。完整项目分别见 [PushCube PPO](https://github.com/Xinyuan1629/pushcube-ppo-reproduction)、[Franka → UR5 ACT](https://github.com/Xinyuan1629/franka-ur5-pushcube-act) 和 [ContactExplorer 学习与评估记录](https://github.com/Xinyuan1629/contactexplorer-study)。ContactExplorer 的算法与主体代码属于原作者；ManiSkill PPO 基线也属于官方项目。本仓库仅陈述我的复现、评估、诊断和实验记录。
