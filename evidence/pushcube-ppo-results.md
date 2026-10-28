@@ -35,12 +35,12 @@ PushCube PPO 使用官方单文件和示例参数：2048 个环境，每次 roll
 
 训练内置评估每次仅 8 回合，后期显示过 100% 成功。它与独立评估的样本数和种子不同，不能直接把那个 100% 当作最终泛化结果。
 
-![训练与失败轨迹](results/learning_and_failure.png)
+![训练与失败轨迹](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/learning_and_failure.png)
 
 ## 录像与轨迹核验
 
-- [成功例子](results/test_videos/1.mp4)：第 13 步首次成功，结束时方块中心距目标中心约 5.19 cm。
-- [到达后又离开](results/test_videos/2.mp4)：第 10 步首次成功，最终距离约 10.38 cm，超过 10 cm 的成功半径。方块仍在桌面上，最终相对目标 XY 偏移约 `[10.07, 2.50] cm`，表现为推过目标。
+- [成功例子](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/test_videos/1.mp4)：第 13 步首次成功，结束时方块中心距目标中心约 5.19 cm。
+- [到达后又离开](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/test_videos/2.mp4)：第 10 步首次成功，最终距离约 10.38 cm，超过 10 cm 的成功半径。方块仍在桌面上，最终相对目标 XY 偏移约 `[10.07, 2.50] cm`，表现为推过目标。
 - 另一个成功录像是 `results/test_videos/0.mp4`。三段录像各 51 帧、30 FPS，是另外 3 个评估回合，不是上述 100 回合的录像。
 - 对应状态、动作、奖励和 success 标记在 `results/test_videos/trajectory.h5`，回合种子在 `trajectory.json`。
 
@@ -54,11 +54,11 @@ PushCube PPO 使用官方单文件和示例参数：2048 个环境，每次 roll
 
 ## 文件入口
 
-- [下一次代码阅读](NEXT_SESSION.md)
-- [交互检查脚本](inspect_rollout.py)
-- [官方 PPO 源码](ppo.upstream.py)
-- [本次安装的 PushCube 源码](results/source_snapshot/push_cube.py)
-- [训练日志](results/train.log)
-- [100 回合评估详情](results/evaluation_final.json)
+- [下一次代码阅读](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/NEXT_SESSION.md)
+- [交互检查脚本](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/inspect_rollout.py)
+- [官方 PPO 源码](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/ppo.upstream.py)
+- [本次安装的 PushCube 源码](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/source_snapshot/push_cube.py)
+- [训练日志](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/train.log)
+- [100 回合评估详情](https://github.com/Xinyuan1629/pushcube-ppo-reproduction/blob/master/results/evaluation_final.json)
 
 初始及最终 checkpoint 均已取回 `results/`。TensorBoard 日志与中间 checkpoint 保留在远端 `runs/pushcube_ppo_seed1/`。

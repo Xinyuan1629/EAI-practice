@@ -87,7 +87,7 @@
 
 ## 结果图
 
-![逐种子最终成功率及验证学习曲线](figures/comparison.png)
+![逐种子最终成功率及验证学习曲线](act-comparison.png)
 
 ## 复现与证据
 
